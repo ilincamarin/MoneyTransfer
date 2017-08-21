@@ -1,0 +1,17 @@
+apply plugin: 'java'
+ 
+repositories {
+	mavenCentral()
+}
+ 
+dependencies {
+	compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.13'
+	compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.13'
+	compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-jdk-http', version: '2.13'
+
+	testCompile 'junit:junit:4.12'
+	testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+	testCompile group: 'com.jayway.restassured', name: 'rest-assured', version: '1.6'
+	
+}
+
